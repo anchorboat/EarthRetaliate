@@ -13,3 +13,77 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Raleway:400,700,900|Ubuntu:300,400,700');
+
+body,html{
+  margin:0; padding:0; box-sizing: border-box;
+}
+
+.header{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+
+  min-height: 10px;
+  /*max-height: 60px;*/
+  background: #58c446;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: #FFF;
+  text-align: center;
+  font-size: 30px;
+}
+
+
+.header .brand{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  padding-top: .5em;
+  padding-bottom: .5em;
+  width: 300px;
+  text-align: center;
+  color: #FFF;
+}
+
+.header .brand a{
+    text-decoration: none;
+    color: #FFF;
+}
+.header .brand a:hover{
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+.navigation{
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /*padding: 10px;*/
+
+  font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+}
+
+.navigation a{
+  display: block;
+  padding: 6px;
+  min-height: 10px;
+  min-width: 100px;
+  text-decoration: none;
+  color: #FFF;
+  background: #51B541;
+  border-radius: 30px;
+  margin: 0 .2em;
+  border: 2px solid #51B541;
+}
+
+.navigation a:hover{
+  background: #58c446;
+  border: 2px solid #51B541;
+}

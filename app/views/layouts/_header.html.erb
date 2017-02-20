@@ -1,13 +1,10 @@
- <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "EarthRetaliate", '#', id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home",   'https://earthretaliate.herokuapp.com' %></li>
-            <li><%= link_to "About",   '#' %></li>
-            <li><%= link_to "Blog", '#' %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
- 
+<div class="header">
+  <div class="brand">
+    <%= link_to "EarthRetaliate", '#', id: "logo" %>
+  </div>
+  <ul class="navigation">
+    <li><%= link_to "Home",   'https://earthretaliate.herokuapp.com' %></li>
+    <li><%= link_to "About",   '/static/about' %></li>
+    <li><%= link_to "Blog", '/static/blog' %></li>
+  </ul>
+</div>
